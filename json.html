@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <h2>Javascript object Notation</h2>
+    <script>
+        const user = {id: 24510, name: "rohim"};
+        //           {"id":24510,"name":"rohim"}
+        const userJson = JSON.stringify(user);
+        console.log(userJson);
+        // reverse to js object
+        const userFormJSON = JSON.parse(userJson);
+        console.log(userFormJSON);
+    </script>
+</body>
+</html>
+
+<!-- json name akta jinish asea etake jdi kokhono string ea convirt korte hoy or string hisabe server ea pathaite hoy taile stringify kore pathaite parbo -->
+
+<!-- ar jokhon recive korbo  tar agea use korar jonno parse kore nibo or kono akta built in system niye use kore felbo-->
