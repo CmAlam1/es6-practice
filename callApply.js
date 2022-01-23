@@ -25,3 +25,13 @@ const friendlyPerson = {
 
 const heroBillCharge = normalPerson.chargeBill.bind(heroPerson);
 heroBillCharge(2000);
+
+const friendlyBillCharge = normalPerson.chargeBill.bind(friendlyPerson);
+friendlyBillCharge(5000);
+
+console.log(heroPerson.salary);
+
+console.log(friendlyPerson.salary);
+
+// jokhon kono akta object er moddhe kono akta method asea sheata oi object ea kora bade 
+// exactly shei method ta jodi onno akta object ea apply korte chai shea khetre amra bind kore felbo
